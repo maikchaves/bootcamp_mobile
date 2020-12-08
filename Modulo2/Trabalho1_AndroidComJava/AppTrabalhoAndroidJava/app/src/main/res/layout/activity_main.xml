@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="Calculadora de Salário Líquido"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="18dp" />
+
+    <TableLayout
+        android:id="@+id/tableDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloCalculadora"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewSalarioBruto"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Salário Bruto R$"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextSalarioBruto"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewDependentes"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Número de dependentes"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextDependentes"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textOutrosDescontos"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Outros Descontos R$   "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextOutrosDescontos"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="numberDecimal" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableDados"
+        android:layout_centerInParent="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:backgroundTint="@color/button_background"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Calcular" />
+
+</RelativeLayout>

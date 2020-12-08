@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="28dp" />
+
+    <TableLayout
+        android:id="@+id/tableDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloResultado"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewResultSalarioBruto"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Salário Bruto R$"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewResultSalarioBrutoValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:hint="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewResultINSS"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="INSS"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textDependentesINSSValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:hint="-"
+                android:textColor="#ff0000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textResultadoIRRF"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="IRRF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textResultadoIRRFValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="-"
+                android:textColor="#ff0000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textResultadoOutrosDescontos"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Outros descontos"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textResultadoOutrosDescontosValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="-"
+                android:textColor="#ff0000" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableSalarioResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableDados"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewSalarioLiquido"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Salário Líquido"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewSalarioLiquidoValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="-"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewDescontos"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Descontos"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewDescontosValue"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="8dp"
+
+                android:ems="10"
+                android:hint="-"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableSalarioResultado"
+
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/button_background"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+
+        android:text="Voltar" />
+
+</RelativeLayout>

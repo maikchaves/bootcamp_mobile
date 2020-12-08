@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-cconst getAccounts = async () => {
+const getAccounts = async () => {
   const responseAccounts = await fetch("https://igti-film.herokuapp.com/api/accounts")
   responseAccounts.json().then(obj => {
 
