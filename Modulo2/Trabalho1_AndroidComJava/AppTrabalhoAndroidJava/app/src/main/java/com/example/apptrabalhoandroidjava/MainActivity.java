@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //inicia variável do botão
+        //inicia variáveis
         salarioBrutoEditText = findViewById(R.id.editTextSalarioBruto);
         numDependentesEditText = findViewById(R.id.editTextDependentes);
         outrosDescontosEditText = findViewById(R.id.editTextOutrosDescontos);

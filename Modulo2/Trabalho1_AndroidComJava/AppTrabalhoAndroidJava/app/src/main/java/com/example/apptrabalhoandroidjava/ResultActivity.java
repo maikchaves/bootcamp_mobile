@@ -31,6 +31,7 @@ public class ResultActivity extends AppCompatActivity {
         inssTextView = findViewById(R.id.textDependentesINSSValue);
         irrfTextView = findViewById(R.id.textResultadoIRRFValue);
         descontosTextView = findViewById(R.id.textResultadoOutrosDescontosValue);
+        voltarButton = findViewById(R.id.buttonVoltar);
 
         salarioLiquidoTextView = findViewById(R.id.textViewSalarioLiquidoValue);
         totalDescontosTextView = findViewById(R.id.textViewDescontosValue);
@@ -56,7 +57,6 @@ public class ResultActivity extends AppCompatActivity {
         totalDescontosTextView.setText(String.format("%.2f%%", descontoPorcentagem));
 
         //dá a ação para o botão de voltar
-        voltarButton = findViewById(R.id.buttonVoltar);
         voltarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
