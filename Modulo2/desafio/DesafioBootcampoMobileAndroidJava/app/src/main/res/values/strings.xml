@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DesafioBootcampoMobileAndroidJava</string>
+    <string name="preference_logged">PREFERENCE_USER_LOGGED</string>
+    <string name="button_false">FALSO</string>
+    <string name="button_true">VERDADEIRO</string>
+    <string name="correct_answer">Acertou!</string>
+    <string name="wrong_answer">Errou!</string>
+    <string name="no_quizz">Nenhuma questao foi encontrada</string>
+    <string name="preference_num_questions">PREFERENCE_NUM_QUESTIONS</string>
+    <string name="preference_num_correct">PREFERENCE_NUM_CORRECT</string>
+    <string name="button_reset">REINICIAR</string>
+    <string name="no_answers">Nenhuma resposta detectada</string>
+    <string name="app_title">Desafio - Android com Java</string>
+</resources>

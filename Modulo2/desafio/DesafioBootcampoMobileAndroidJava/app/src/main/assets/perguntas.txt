@@ -1,0 +1,8 @@
+A linguagem oficial para desenvolvimento Android Nativo pela Google é a Kotlin; verdadeiro
+O processo de publicação do aplicativo na Google Play é gratuito; false
+O Brasil possui uma população de quase 210 milhões; verdadeiro
+Flutter é uma dos frameworks de desenvolvimento mobile; verdadeiro
+A linguagem de programação do Flutter é o Dart; verdadeiro
+O Flutter possui interoperabilidade e pode ter projetos em Java e Dart; falso
+React-Native é uma plataforma para desenvolvimento de aplicativos móveis; verdadeiro
+O Kotlin possui interoperabilidade oque possibilita implementar projetos em Java e Kotlin; verdadeiro
